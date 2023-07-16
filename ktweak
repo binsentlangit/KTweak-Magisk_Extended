@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/system/bin/sh
 # Written by Draco (tytydraco @ GitHub)
 
 # The name of the current branch for logging purposes
