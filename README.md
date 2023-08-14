@@ -48,6 +48,11 @@ min=0, max=32781`
 - Stock: 10 / 12
 - KTweak: 4 / 4
 
+Test on Wiko Power U20 (W-V750BN-TVM)
+- Stock: 2 / 4
+- LSpeed 2 / 46
+- KTweak: 2/ 2
+
 ### Scheduler throughput via `perf bench sched messaging` (lower is better)
 - Stock: 0.331 seconds
 - KTweak: 0.808 seconds
