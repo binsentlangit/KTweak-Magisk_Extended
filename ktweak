@@ -1,8 +1,5 @@
 #!/system/bin/sh
 
-# The name of the current branch for logging purposes
-BRANCH="latency"
-
 # Maximum unsigned integer size in C
 UINT_MAX="4294967295"
 
