@@ -1,5 +1,4 @@
 #!/system/bin/sh
-# Written by Draco (tytydraco @ GitHub)
 
 # The name of the current branch for logging purposes
 BRANCH="latency"
@@ -40,10 +39,6 @@ fi
 
 # Detect if we are running on Android
 grep -q android /proc/cmdline && ANDROID=true
-
-# Log the date and time for records sake
-echo "Time of execution: $(date)"
-echo "Branch: $BRANCH"
 
 # Sync to data in the rare case a device crashes
 sync
