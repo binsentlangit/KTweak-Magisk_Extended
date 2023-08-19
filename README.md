@@ -15,7 +15,12 @@ The following benchmarks were performed on a Wiko Power U20(W-V750BN-TVM) runnin
 
 ### Synthmark Latencymark (lower is better)
 - Stock: 2 / 4
+- Stock (Android Go): 2 / 4
 - KTweak: 2 / 2
+- KTweak (Android Go): 2 / 2
 
+### JunkBenchX
+- Stock (Android Go): Score 564 Junk 1.4%
+- KTweak (Android Go): Score 51 Junk 0.1%
 # The Tweaks
 Head over to the [script itself](ktweak) to learn what everything does. It is documented in the comments.
