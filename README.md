@@ -24,3 +24,7 @@ The following benchmarks were performed on a Wiko Power U20(W-V750BN-TVM) runnin
 - KTweak (Android Go): Score 51 Junk 0.1%
 # The Tweaks
 Head over to the [script itself](ktweak) to learn what everything does. It is documented in the comments.
+
+### Binsentlangit Fork:
+Removed lines for changing cpu governor; performance is still untested
+
