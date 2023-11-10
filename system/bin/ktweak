@@ -88,6 +88,30 @@ then
 	write /dev/stune/top-app/schedtune.boost 1
 fi
 
+for cpu in /sys/devices/system/cpu/cpu*/cpufreq
+do
+	avail_govs="$(cat "$cpu/scaling_available_governors")"
+
+	for governor in schedutil interactive
+	do
+		if [[ "$avail_govs" == *"$governor"* ]]
+		then
+			write "$cpu/scaling_governor" "$governor"
+			break
+		fi
+	done
+done
+
+find /sys/devices/system/cpu/ -name schedutil -type d | while IFS= read -r governor
+do
+	write "$governor/up_rate_limit_us" 0
+	write "$governor/down_rate_limit_us" 0
+	write "$governor/rate_limit_us" 0
+
+	write "$governor/hispeed_load" 85
+	write "$governor/hispeed_freq" "$UINT_MAX"
+done
+
 for queue in /sys/block/*/queue
 do
 	avail_scheds="$(cat "$queue/scheduler")"
