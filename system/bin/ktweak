@@ -114,6 +114,16 @@ done
 
 for queue in /sys/block/*/queue
 do
+	avail_scheds="$(cat "$queue/scheduler")"
+	for sched in lz77eh lzo-rle zstd kyber none
+	do
+		if [[ "$avail_scheds" == *"$sched"* ]]
+		then
+			write "$queue/scheduler" "$sched"
+			break
+		fi
+	done
+
 	write "$queue/add_random" 0
 
 	write "$queue/iostats" 0
