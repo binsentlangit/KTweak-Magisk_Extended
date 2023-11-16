@@ -107,7 +107,6 @@ do
 	write "$governor/up_rate_limit_us" 0
 	write "$governor/down_rate_limit_us" 0
 	write "$governor/rate_limit_us" 0
-
 	write "$governor/hispeed_load" 85
 	write "$governor/hispeed_freq" "$UINT_MAX"
 done
