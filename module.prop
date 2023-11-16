@@ -1,6 +1,6 @@
 id=ktweak
 name=KTweak
-version=2.4.3
-versionCode=243
+version=2.4.5
+versionCode=245
 author=Tytydraco, Sygisk, Binsent
 description=Kernel tweaker that reduce latency on Android backed by evidence.
